@@ -1,18 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import inbox from "../../../public/Assets/images/inbox.svg";
-import notificationLogo from "../../../public/Assets/images/notification.svg";
-import profileLogo from "../../../public/Assets/images/profile.png";
-import examLogo from "../../../public/Assets/images/exam.png";
-import settingLogo from "../../../public/Assets/images/settingsLogo.svg";
-import logoutLogo from "../../../public/Assets/images/logoutLogo.svg";
+import inbox from "../../assets/images/inbox.svg";
+import notificationLogo from "../../assets/images/notification.svg";
+import profileLogo from "../../assets/images/profile.svg";
+import examLogo from "../../assets/images/exam.png";
+import settingLogo from "../../assets/images/settings.svg";
+import logoutLogo from "../../assets/images/logout.svg";
 
 const HomeNavbar = () => {
   const [state, setState] = useState(true);
   const [notification, setNotification] = useState(false);
   return (
-    <nav className="w-11/12 lg:w-12/12 2xl:w-8/12 mx-auto fixed left-0 right-0 top-3 lg:top-8 2xl:top-10 z-10 backdrop-filter backdrop-blur-xl rounded-md text-primary duration-300 firefox:bg-opacity-30 bg-opacity-30 bg-neutral shadow-md font-Permanent">
+    <nav className="w-11/12 lg:w-12/12 2xl:w-8/12 mx-auto fixed left-0 right-0 top-3 lg:top-8 2xl:top-10 z-10 backdrop-filter backdrop-blur-xl rounded-md text-primary duration-300 firefox:bg-opacity-30 bg-opacity-30 bg-accent shadow-md font-Permanent">
       <div className="mx-auto px-4">
         <div className="navbar justify-between h-16">
           <div className="flex-1">
