@@ -18,13 +18,13 @@ const Index = () => {
       <Head>
         <title>Register</title>
       </Head>
-      <div className="min-h-screen mb-0 lg:overflow-hidden">
-        <div className="mt-20 flex justify-around">
+      <div className="min-h-screen sm:mb-10 md:mb-10 lg:overflow-hidden">
+        <div className="mt-20 lg:flex justify-around">
           <div className="lg:mt-32 text-center lg:text-left">
-            <img src='https://i.ibb.co/pQq98Qw/online-registration-sign-up-with-man-sitting-near-smartphone-268404-95.webp' alt='login' width={500} />
+            <img className="inline" src='https://i.ibb.co/pQq98Qw/online-registration-sign-up-with-man-sitting-near-smartphone-268404-95.webp' alt='login' width={500} />
           </div>
           <div>
-            <div className='lg:flex justify-center items-center'>
+            <div className='flex justify-center items-center'>
               <div>
                 <h2 className='font-extrabold text-neutral text-2xl text-center'>Register</h2>
                 <form onSubmit={handleSubmit(handleRegister)}>

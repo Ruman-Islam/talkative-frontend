@@ -24,14 +24,14 @@ const Index = () => {
           <div className="text-center lg:text-left">
             <img src='https://i.ibb.co/JQP6jCp/3-Q0k3-RC-CWEAMUZb-Q-Eu-N-transformed.jpg' alt='login' width={500} height={500} />
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card flex-shrink-0 w-full max-w-sm">
             <div className='flex justify-center items-center'>
               <div className='w-96 p-7'>
                 <h2 className='font-extrabold text-neutral text-2xl text-center'>Login</h2>
                 <form onSubmit={handleSubmit(handleLogin)}>
                   <div className="text-neutral form-control w-full max-w-xs">
                     <label className="label"> <span className="label-text text-neutral">Email</span></label>
-                    <input type="text"
+                    <input type="text" placeholder="Enter email"
                       {...register("email", {
                         required: "Email Address is required"
                       })}
@@ -40,7 +40,7 @@ const Index = () => {
                   </div>
                   <div className="form-control w-full max-w-xs">
                     <label className="label"> <span className="label-text text-neutral">Password</span></label>
-                    <input type="password"
+                    <input type="password" placeholder="Enter password"
                       {...register("password", {
                         required: "Password is required",
                         minLength: { value: 6, message: 'Password must be 6 characters or longer' }
