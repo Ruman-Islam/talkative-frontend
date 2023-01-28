@@ -37,7 +37,7 @@ const Home = () => {
           </div>
           <img
             src="https://lh3.googleusercontent.com/nSljuMFCI1FTxwxfrvh4BpAes486Ucy-HMSeo_1xiK5UO3Kty40OMFwrAiFM6-2At7gNtATmwLCjzSxRCGrGpu_ojkwcdiIFwwOdqk1w4h4P3O8Hmnsl=rwu-v1-w1400"
-            className="md:max-w-xl 2xl:max-w-2xl rounded-lg shadow-2xl"
+            className="md:max-w-xl 2xl:max-w-2xl rounded-lg shadow-2xl" alt="talkative"
           />
         </div>
       </div>
@@ -47,7 +47,7 @@ const Home = () => {
             <button
               onClick={() => setModal(false)}
               className="btn btn-sm btn-circle absolute right-6 top-4"
-            >
+              >
               ✕
             </button>
             <div className="mt-12 col-span-full sm:col-span-3">
@@ -55,7 +55,7 @@ const Home = () => {
                 name="age"
                 type="text"
                 placeholder="Enter age"
-                className="w-full rounded-md border-0 bg-white text-accent font-bold placeholder:text-neutral px-4 py-2"
+                className="w-full backdrop-filter backdrop-blur-lg text-gray border-b border-primary bg-accent font-semibold placeholder:text-gray px-5 py-2 focus:outline-none"
               />
             </div>
             <div className="col-span-full sm:col-span-3">
@@ -63,7 +63,7 @@ const Home = () => {
                 defaultValue="Preference country"
                 name="preference_country"
                 type="text"
-                className="w-full rounded-md bg-white text-accent font-bold  px-4 py-2"
+                className="w-full backdrop-filter backdrop-blur-lg text-gray border-b border-primary bg-accent font-semibold px-4 py-2 focus:outline-none"
               >
                 <option disabled defaultValue>
                   Preference country
@@ -79,7 +79,7 @@ const Home = () => {
                 defaultValue="Preference languages"
                 name="preference_language"
                 type="text"
-                className="w-full rounded-md bg-white text-accent font-bold px-4 py-2"
+                className="w-full backdrop-filter backdrop-blur-lg text-gray border-b border-primary bg-accent font-semibold px-4 py-2 focus:outline-none"
               >
                 <option disabled defaultValue>
                   Preference languages
@@ -89,7 +89,7 @@ const Home = () => {
               </select>
             </div>
             <input
-              className="mt-8 btn btn-primary w-full font-bold "
+              className="mt-8 btn btn-primary w-full font-bold"
               type="submit"
               value="Search"
             />

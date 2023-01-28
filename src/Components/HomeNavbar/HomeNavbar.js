@@ -16,7 +16,7 @@ const HomeNavbar = () => {
       <div className="mx-auto px-4">
         <div className="navbar justify-between h-16">
           <div className="flex-1">
-            <Link href="/test" className="normal-case text-xl md:text-3xl font-bold">
+            <Link href="/test" className="normal-case text-2xl md:text-3xl font-bold">
               Talkative
             </Link>
           </div>
