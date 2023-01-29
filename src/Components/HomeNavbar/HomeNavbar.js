@@ -9,26 +9,26 @@ import settingLogo from "../../assets/images/settings.svg";
 import logoutLogo from "../../assets/images/logout.svg";
 
 const HomeNavbar = () => {
-  const [state, setState] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [notification, setNotification] = useState(false);
   return (
     <nav className="w-11/12 lg:w-12/12 2xl:w-8/12 mx-auto fixed left-0 right-0 top-3 lg:top-8 2xl:top-10 z-10 backdrop-filter backdrop-blur-xl rounded-md text-primary duration-300 firefox:bg-opacity-30 bg-opacity-30 bg-accent shadow-md font-Permanent">
       <div className="mx-auto px-4">
         <div className="navbar justify-between h-16">
           <div className="flex-1">
-            <Link href="/test" className="normal-case text-2xl md:text-3xl font-bold">
+            <span className="normal-case text-2xl md:text-3xl font-bold cursor-default">
               Talkative
-            </Link>
+            </span>
           </div>
           <div className="flex-1 justify-end">
             <ul className="flex text-sm md:text-lg font-bold items-center">
-              {state && <li className="hidden md:flex mr-5">Lvl-1</li>}
-              {state || (
+              {isLoggedIn && <li className="hidden md:flex mr-5">Lvl-1</li>}
+              {isLoggedIn || (
                 <li className="mr-5 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-primary before:absolute before:left-0 before:top-11">
                   <Link href="">Login</Link>
                 </li>
               )}
-              {state || (
+              {isLoggedIn || (
                 <li className="shadow-md p-0.5 rounded-sm">
                   <Link
                     className="inline-block bg-primary hover:bg-base-100 hover:text-primary duration-200 text-base-100 px-3 py-1 rounded-sm"
@@ -38,7 +38,7 @@ const HomeNavbar = () => {
                   </Link>
                 </li>
               )}
-              {state && (
+              {isLoggedIn && (
                 <li
                   tabIndex={1}
                   className="mr-5 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-primary before:absolute before:left-0 before:top-11 mt-1 dropdown dropdown-end"
@@ -54,14 +54,14 @@ const HomeNavbar = () => {
                   </ul>
                 </li>
               )}
-              {state && (
+              {isLoggedIn && (
                 <li className="mr-5 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-primary text-yellow-400 before:absolute before:left-0 before:top-11 mt-1 md:text-2xl">
                   <Link href="">
                     <Image className="w-8" src={inbox} alt="" />
                   </Link>
                 </li>
               )}
-              {state && (
+              {isLoggedIn && (
                 <li className="dropdown dropdown-end">
                   <label
                     tabIndex={0}
