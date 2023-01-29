@@ -84,7 +84,7 @@ const Index = () => {
                     {signupError && <p className='text-red-600'>{signupError}</p>}
                   </div>
                 </form>
-                <p className="text-neutral">Already have an account? <Link href='/Login/Index' className='font-bold text-info'>login</Link></p>
+                <p className="text-neutral">Already have an account? <Link href='Login' className='font-bold text-info'>login</Link></p>
                 <div className="divider"> </div>
                 <button className='btn btn-primary btn-outline w-full'>Google Signup</button>
               </div>
