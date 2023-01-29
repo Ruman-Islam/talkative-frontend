@@ -88,7 +88,7 @@ const Index = () => {
                 </form>
                 <p className="text-neutral">
                   New to Talkative?{" "}
-                  <Link href="/Register/Index" className="font-bold text-info">
+                  <Link href="Register" className="font-bold text-info">
                     Create New Account
                   </Link>
                 </p>
