@@ -25,14 +25,14 @@ const HomeNavbar = () => {
               {isLoggedIn && <li className="hidden md:flex mr-5">Lvl-1</li>}
               {isLoggedIn || (
                 <li className="mr-5 hover:before:scale-x-100 hover:before:origin-left relative before:w-full before:h-0.5 before:origin-right before:transition-transform before:duration-300 before:scale-x-0 before:bg-primary before:absolute before:left-0 before:top-11">
-                  <Link href="">Login</Link>
+                  <Link href="Login">Login</Link>
                 </li>
               )}
               {isLoggedIn || (
                 <li className="shadow-md p-0.5 rounded-sm">
                   <Link
                     className="inline-block bg-primary hover:bg-base-100 hover:text-primary duration-200 text-base-100 px-3 py-1 rounded-sm"
-                    href=""
+                    href="Register"
                   >
                     Signup
                   </Link>
